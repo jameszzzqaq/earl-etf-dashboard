@@ -32,3 +32,4 @@ cache/tc_raw/
 
 # data.js = "window.DATA=" + data.json，纯冗余（每天 2.2MB）。build.py 缺失时会自动生成。
 /data.js
+_cf_pages/

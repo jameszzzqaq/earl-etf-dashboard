@@ -1,9 +1,9 @@
 # EarlETF 图表周刊 · 指标看板
 
-> **在线看板（点开即用）**：<https://wj624.github.io/earl-etf-dashboard/>  
-> **五年之锚 v2（独立页）**：<https://wj624.github.io/earl-etf-dashboard/anchor_v2.html>  
-> **源码仓库**：<https://github.com/wj624/earl-etf-dashboard>  
-> **原版看板（上游 wwww1998）**：<https://wwww1998.github.io/earl-etf-dashboard/>
+> **在线看板（点开即用）**：<https://earl.yygq.me/>  
+> **五年之锚 v2（独立页）**：<https://earl.yygq.me/anchor_v2.html>  
+> **源码仓库**：<https://github.com/jameszzzqaq/earl-etf-dashboard>  
+> **原版看板（上游 wwww1998 / wj624）**：<https://wwww1998.github.io/earl-etf-dashboard/> · <https://github.com/wj624/earl-etf-dashboard>
 
 复现张翼轸《EarlETF 图表周刊》里的图表模型，做成一个**自包含单文件看板**，数据每天 18:30 自动更新。
 
@@ -17,26 +17,26 @@
 
 | 用途 | 地址 |
 |---|---|
-| **看板主页**（人看） | <https://wj624.github.io/earl-etf-dashboard/> |
-| **看板中心（聚合入口）** | <https://wj-dashboards.pages.dev/> |
-| 五年之锚 v2 独立页 | <https://wj624.github.io/earl-etf-dashboard/anchor_v2.html> |
-| **给 AI 的文本摘要**（推荐发这个） | <https://wj624.github.io/earl-etf-dashboard/llms.txt> |
-| 同一份摘要的 Markdown 版 | <https://wj624.github.io/earl-etf-dashboard/snapshot.md> |
-| 精简机器数据 | <https://wj624.github.io/earl-etf-dashboard/latest.json> |
-| 全量机器数据 | <https://wj624.github.io/earl-etf-dashboard/data.json> |
-| 源码仓库 | <https://github.com/wj624/earl-etf-dashboard> |
-| **原版看板（上游 wwww1998）** | <https://wwww1998.github.io/earl-etf-dashboard/> |
+| **看板主页**（人看） | <https://earl.yygq.me/> |
+| **备用在线地址（GitHub Pages）** | <https://jameszzzqaq.github.io/earl-etf-dashboard/> |
+| 五年之锚 v2 独立页 | <https://earl.yygq.me/anchor_v2.html> |
+| **给 AI 的文本摘要**（推荐发这个） | <https://earl.yygq.me/llms.txt> |
+| 同一份摘要的 Markdown 版 | <https://earl.yygq.me/snapshot.md> |
+| 精简机器数据 | <https://earl.yygq.me/latest.json> |
+| 全量机器数据 | <https://earl.yygq.me/data.json> |
+| 源码仓库 | <https://github.com/jameszzzqaq/earl-etf-dashboard> |
+| **原版看板（上游 wwww1998 / wj624）** | <https://wwww1998.github.io/earl-etf-dashboard/> · <https://github.com/wj624/earl-etf-dashboard> |
 
 一次性复制全部地址：
 
 ```text
-看板主页        https://wj624.github.io/earl-etf-dashboard/
-五年之锚 v2     https://wj624.github.io/earl-etf-dashboard/anchor_v2.html
-给 AI 的摘要    https://wj624.github.io/earl-etf-dashboard/llms.txt
-摘要 Markdown   https://wj624.github.io/earl-etf-dashboard/snapshot.md
-精简数据        https://wj624.github.io/earl-etf-dashboard/latest.json
-全量数据        https://wj624.github.io/earl-etf-dashboard/data.json
-源码仓库        https://github.com/wj624/earl-etf-dashboard
+看板主页        https://earl.yygq.me/
+五年之锚 v2     https://earl.yygq.me/anchor_v2.html
+给 AI 的摘要    https://earl.yygq.me/llms.txt
+摘要 Markdown   https://earl.yygq.me/snapshot.md
+精简数据        https://earl.yygq.me/latest.json
+全量数据        https://earl.yygq.me/data.json
+源码仓库        https://github.com/jameszzzqaq/earl-etf-dashboard
 原版看板        https://wwww1998.github.io/earl-etf-dashboard/
 ```
 
@@ -799,7 +799,7 @@ python backfill.py 2              # 中证官网补洞守护进程，最多跑 2
 
 ### 部署步骤
 
-> 想省事就直接开 **<https://wj624.github.io/earl-etf-dashboard/复制邮件脚本.html>** —— 页面里点「复制全文」，然后跳到第 3 步。
+> 想省事就直接开 **<https://earl.yygq.me/复制邮件脚本.html>** —— 页面里点「复制全文」，然后跳到第 3 步。
 
 1. 打开 <https://script.google.com/home> → 打开**你已有的项目**（第一次用就点左上「新项目」，建议命名「A股每日解读」）。
 2. 把 `gas-earl-daily.gs` 全文粘进编辑器，覆盖掉原来的内容（新项目里是默认的 `myFunction`），`Ctrl+S` 保存。
@@ -895,7 +895,7 @@ FRED 同样会被封）。所以密钥一律走 `setGeminiKey` / `setFredKey` �
 
 ## 13.3 自建 a-stock-api 的接入现状
 
-[a-stock-api](https://github.com/wj624/a-stock-api) 是与本仓库配套的 Worker 数据层，
+[a-stock-api](https://github.com/jameszzzqaq/a-stock-api) 是与本仓库配套的 Worker 数据层，
 把「第三方接口 + 解析」收到一处，端点清单与字段口径见其 README §9。
 
 ### 已接入
@@ -936,7 +936,7 @@ M13 全市场快照兜底（`stock_zh_a_spot_em`）。`requirements.txt` 与 wor
 ## 13.4 提示词（复制这段给 AI）
 
 ```text
-你在维护 GitHub 仓库 wj624/earl-etf-dashboard —— EarlETF 图表周刊的 20 指标看板。
+你在维护 GitHub 仓库 jameszzzqaq/earl-etf-dashboard —— EarlETF 图表周刊的 20 指标看板。
 先完整读 README 的「第十一部分 · 维护须知」（8 条经验）与「第十三部分 · 给 AI 的维护提示词」。
 
 【流水线】
@@ -979,7 +979,7 @@ make_llm_summary.py → llms.txt / snapshot.md / latest.json（AI 摘要）
 - 云端：Actions 手动跑「每日自动更新看板」，确认 cache/csi*.csv 数量 ≥15（走 --quick 增量），
   且提交里含 index.html / data.json / version.txt / cache/。
 - 注意：沙盒/部分 CI 访问不到 *.workers.dev；要验证 a-stock-api 端点，见
-  https://github.com/wj624/a-stock-api 的 README §9（直接读 KV 缓存值核对数值）。
+  https://github.com/jameszzzqaq/a-stock-api 的 README §9（直接读 KV 缓存值核对数值）。
 
 【收尾】改了口径/数据源/调度，同步更新 README 第六部分（数据源）、第七部分（口径替代说明）、第八部分（自动更新）。
 ```

@@ -572,13 +572,13 @@ def get_rates():
 
 # ----------------------------------------------------------- 自建数据 API（a-stock-api）
 # 把「第三方接口 + 解析」这层收到一处，脚本只消费 JSON。
-# 端点源码与字段口径见 https://github.com/wj624/a-stock-api
+# 端点源码与字段口径见 https://github.com/jameszzzqaq/a-stock-api
 # 设计约束：
 #   1) 任何异常都返回 None，由调用方决定回退 —— 它是加速层，不是唯一源；
 #   2) 不重试。Worker 侧自带 KV 缓存，重试只会把 5s 的失败拖成 15s，还挤占本就紧张的 15min 抓取窗口；
 #   3) 超时 30s。部分端点要翻十几页上游，比单次抓取慢得多。
 API_BASE = os.environ.get("EARL_API_BASE",
-                          "https://a-stock-api.wj4020410.workers.dev").rstrip("/")
+                          "https://stock-api.yygq.me").rstrip("/")
 
 
 def _api_json(path, params=None, timeout=30):
