@@ -1,8 +1,8 @@
 # EarlETF 图表周刊 · 指标看板 —— 数据快照
 
 > 生成时间：2026-11-27 21:16（北京时间）　最新行情日：2026-11-27
-> 在线看板：https://earl.yygq.me/
-> 机器可读全量数据：https://earl.yygq.me/data.json
+> 在线看板：https://invest.yygq.me/earl/
+> 机器可读全量数据：https://invest.yygq.me/earl/data.json
 
 ## 这是什么
 

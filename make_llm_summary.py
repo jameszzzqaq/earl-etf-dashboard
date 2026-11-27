@@ -16,7 +16,7 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = 'https://earl.yygq.me'
+BASE = 'https://invest.yygq.me/earl'
 
 # 编号 -> (名称, 分组, 判读口径一句话)
 META = {

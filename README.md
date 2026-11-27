@@ -1,7 +1,7 @@
 # EarlETF 图表周刊 · 指标看板
 
-> **在线看板（点开即用）**：<https://earl.yygq.me/>  
-> **五年之锚 v2（独立页）**：<https://earl.yygq.me/anchor_v2.html>  
+> **在线看板（点开即用）**：<https://invest.yygq.me/earl/>  
+> **五年之锚 v2（独立页）**：<https://invest.yygq.me/earl/anchor_v2.html>  
 > **源码仓库**：<https://github.com/jameszzzqaq/earl-etf-dashboard>  
 > **原版看板（上游 wwww1998 / wj624）**：<https://wwww1998.github.io/earl-etf-dashboard/> · <https://github.com/wj624/earl-etf-dashboard>
 
@@ -17,25 +17,26 @@
 
 | 用途 | 地址 |
 |---|---|
-| **看板主页**（人看） | <https://earl.yygq.me/> |
+| **看板主页**（人看） | <https://invest.yygq.me/earl/> |
+| **看板中心（聚合入口）** | <https://invest.yygq.me/> |
 | **备用在线地址（GitHub Pages）** | <https://jameszzzqaq.github.io/earl-etf-dashboard/> |
-| 五年之锚 v2 独立页 | <https://earl.yygq.me/anchor_v2.html> |
-| **给 AI 的文本摘要**（推荐发这个） | <https://earl.yygq.me/llms.txt> |
-| 同一份摘要的 Markdown 版 | <https://earl.yygq.me/snapshot.md> |
-| 精简机器数据 | <https://earl.yygq.me/latest.json> |
-| 全量机器数据 | <https://earl.yygq.me/data.json> |
+| 五年之锚 v2 独立页 | <https://invest.yygq.me/earl/anchor_v2.html> |
+| **给 AI 的文本摘要**（推荐发这个） | <https://invest.yygq.me/earl/llms.txt> |
+| 同一份摘要的 Markdown 版 | <https://invest.yygq.me/earl/snapshot.md> |
+| 精简机器数据 | <https://invest.yygq.me/earl/latest.json> |
+| 全量机器数据 | <https://invest.yygq.me/earl/data.json> |
 | 源码仓库 | <https://github.com/jameszzzqaq/earl-etf-dashboard> |
 | **原版看板（上游 wwww1998 / wj624）** | <https://wwww1998.github.io/earl-etf-dashboard/> · <https://github.com/wj624/earl-etf-dashboard> |
 
 一次性复制全部地址：
 
 ```text
-看板主页        https://earl.yygq.me/
-五年之锚 v2     https://earl.yygq.me/anchor_v2.html
-给 AI 的摘要    https://earl.yygq.me/llms.txt
-摘要 Markdown   https://earl.yygq.me/snapshot.md
-精简数据        https://earl.yygq.me/latest.json
-全量数据        https://earl.yygq.me/data.json
+看板主页        https://invest.yygq.me/earl/
+五年之锚 v2     https://invest.yygq.me/earl/anchor_v2.html
+给 AI 的摘要    https://invest.yygq.me/earl/llms.txt
+摘要 Markdown   https://invest.yygq.me/earl/snapshot.md
+精简数据        https://invest.yygq.me/earl/latest.json
+全量数据        https://invest.yygq.me/earl/data.json
 源码仓库        https://github.com/jameszzzqaq/earl-etf-dashboard
 原版看板        https://wwww1998.github.io/earl-etf-dashboard/
 ```
@@ -799,7 +800,7 @@ python backfill.py 2              # 中证官网补洞守护进程，最多跑 2
 
 ### 部署步骤
 
-> 想省事就直接开 **<https://earl.yygq.me/复制邮件脚本.html>** —— 页面里点「复制全文」，然后跳到第 3 步。
+> 想省事就直接开 **<https://invest.yygq.me/earl/复制邮件脚本.html>** —— 页面里点「复制全文」，然后跳到第 3 步。
 
 1. 打开 <https://script.google.com/home> → 打开**你已有的项目**（第一次用就点左上「新项目」，建议命名「A股每日解读」）。
 2. 把 `gas-earl-daily.gs` 全文粘进编辑器，覆盖掉原来的内容（新项目里是默认的 `myFunction`），`Ctrl+S` 保存。

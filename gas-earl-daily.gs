@@ -1,7 +1,7 @@
 /**
  * ============================================================================
  *  A 股指标看板 · 每日自动解读邮件
- *  数据源：https://earl.yygq.me/
+ *  数据源：https://invest.yygq.me/earl/
  *  运行环境：Google Apps Script（script.google.com）
  *  作者备注：本文件仅为「读取 + 解读 + 发信」，不做任何交易动作。
  * ============================================================================
@@ -38,9 +38,9 @@
 // ============================================================
 var CONFIG = {
   // —— 数据源 ——
-  URL_JSON: 'https://earl.yygq.me/latest.json', // 结构化数值，约 7.6KB
-  URL_TEXT: 'https://earl.yygq.me/llms.txt',    // 人话读数 + 判读口径，约 8.6KB
-  URL_SITE: 'https://earl.yygq.me/',
+  URL_JSON: 'https://invest.yygq.me/earl/latest.json', // 结构化数值，约 7.6KB
+  URL_TEXT: 'https://invest.yygq.me/earl/llms.txt',    // 人话读数 + 判读口径，约 8.6KB
+  URL_SITE: 'https://invest.yygq.me/earl/',
 
   // —— 密钥 ——
   // ⚠️ 不要把密钥写在这里！这个文件是公开仓库的一部分，
